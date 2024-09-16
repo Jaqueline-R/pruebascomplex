@@ -1,0 +1,1027 @@
+
+
+Module Module1
+
+
+    Sub Main()
+
+        Dim dtC As DataTable = DatosCo()
+
+
+        Try
+            Bitacora
+
+
+            Dim dsRes = ObtenerPa()
+
+            If Not dsRes Is Nothing Then
+                For Each fila As DataRow In dsRes.Tables(0).Rows()
+                    Inicio = fila("Inicio")
+                    Fin = fila("HFin")
+                Next
+            End If
+
+
+            ob = New IFT()
+            Horas = ob.Valida(Inicio, Fin)
+            ob = Nothing
+
+
+            Dim D1 As Short
+            Dim D2 As String
+            Dim D3 As Short
+            Dim D4 As String
+
+            If (Horas) Then
+
+
+                Bitacora
+
+                Dim Lo As New ALo.Lo
+                Dim Tr As New ATr.Tr
+                Dim iE As New A_Lo
+                Dim ge As Boolean = False
+
+
+                Dim dRP = OLo()
+                EL = False
+
+
+                If Not dRP Is Nothing Then
+                    Bitacora
+
+
+                    For Each fila As DataRow In dRP.Tables(0).Rows()
+                        Try
+                            EL = True
+                            Dim D3 As New B.C()
+                            Dim I3 As Integer
+                            Dim DR As Integer
+                            iE = A_L.E_
+
+
+                            x_C = fila("L")
+                            Ct = fila("Ct").ToString().Trim()
+                            TC = fila("TC")
+                            M = fila("M")
+                            Mt = fila("Mt")
+                            CL = fila("CL")
+                            L = CeroIzquierda(L, 14)
+                            L = 2 & L
+                            MT = fila("MT")
+                            gR = False
+
+                            Call I("[" & m & "", " " & o)
+
+
+                            Dim i As New o
+                            Dim p = i.c(c, t, 1, d)
+
+                            If Not p Is Nothing Then
+                                Dim d As DataRow
+                                d = p.Tables(0).Rows(0)
+
+                                If d("") = "" Then
+                                    a = d("")
+                                End If
+
+                            End If
+
+
+                            Dim v As New li
+                            Dim ec = v.vx(c, m.ToString(), Integer.Parse(tc), "")
+                            v = Nothing
+
+
+                            If ec = 1 And Not a Is Nothing Then
+
+                                Dim ad As String = ""
+                                ad = des
+                                If ad = "" Then
+                                    ad = ""
+                                End If
+
+
+                                t = CeroIzquierda("0", 15)
+                                a = aa
+
+                                Dim m As String
+                                Dim c As String
+                                Dim v As String
+                                Dim s() As String
+
+                                If m.Contains(".") Then
+                                    s = l.Split(".")
+                                    If s(1).Length = 1 Then
+                                        If s(1) = "0" Then
+                                            s = String.Concat(s(0), "")
+                                        Else
+                                            s = String.Concat(s(0), s(1), "0")
+                                        End If
+
+                                    Else
+                                        s = String.Concat(s(0), s(1))
+                                    End If
+
+                                Else
+                                    s = String.Concat(s, "00")
+                                End If
+
+                                a = CeroIzquierda(s, 11)
+                                f = CeroIzquierda(q, 11)
+                                a = CeroIzquierda(w, 18)
+
+                                Try
+
+                                    r = re
+                                    Dim q = qw(t, c, 1, k, o, u, r)
+
+                                    If Not w Then
+
+                                        Call d(m)
+
+                                    Else
+
+                                        Call n(p, u, h, k, h, v, z, s, f(n), w)
+
+                                    End If
+
+
+                                    If r = q.e Then
+                                        Try
+
+                                            Dim w As New d()
+                                            Dim s = o.o(CInt(c), b, 1)
+                                            a = Nothing
+
+                                            Call b("[" & q & "", "  " & a & "  " & s)
+
+                                            f = New n()
+                                            v.x(c, d, d, 0, s, 0, 0)
+                                            s = Nothing
+                                        Catch x As Exception
+                                            Call c(" " & s & "  " & ex.ToString())
+
+                                            i.jh(v, d, "", 2, "", x, "", ex.ToString().Replace("'", ""), "", "", "", DateTime.Now.ToString(""), x, d)
+
+                                        End Try
+
+
+                                        Call s.a(s, a)
+                                        Call g.k(i, w.p)
+
+
+                                        Call v("[" & l & "", " " & n & " ")
+                                    ElseIf h = t.w Then
+
+                                        Call v.b(x, b, q.d)
+                                        Call m.q(x, m(i))
+
+
+                                        Call q("[" & n & "", "" & o & " ")
+                                    Else
+
+                                        Call c.s(q, k)
+                                        Call v.t(n, x(o))
+
+
+                                        Call m("[" & n & "", " " & h & "  " & m)
+                                    End If
+
+                                    k = Nothing
+                                    g = ""
+                                    o = 0
+                                    n = 0
+                                    y = 0
+                                    r = ""
+
+                                Catch m As Exception
+                                    Call s("[" & y & "", " " & y & "  " & ex.ToString())
+
+                                    i.b(r, s, "", 2, "", gf, "", m.ToString().Replace("'", ""), "", "", "", DateTime.Now.ToString(""), i, d)
+
+                                End Try
+                            Else
+
+                                l(h)
+
+                                i.z(j, f, " ", 2, "", g, "", " ", "", "", u, DateTime.Now.ToString(""), g, w)
+
+                                Call d("[" & m & "", $"E {n}, u: {d}")
+                            End If
+
+
+                        Catch h As Exception
+                            Bit(" " + ex.ToString().Replace("'", ""))
+                        End Try
+                    Next
+                Else
+
+                    Bit("")
+                End If
+                If Not o Then
+
+                    Bit("")
+                End If
+
+            End If
+
+        Catch v As Exception
+            Bit(" " + ex.Message.ToString())
+        End Try
+        Bit("")
+        Call b(p)
+    End Sub
+
+    Public Function o() As DataTable
+        Dim dt As DataTable = New DataTable()
+        dt.Columns.Add("v")
+        dt.Columns.Add("d")
+        dt.Columns.Add("w")
+        dt.Columns.Add("x")
+        dt.Columns.Add("w")
+        dt.Columns.Add("s")
+
+
+        Return dt
+    End Function
+
+    Public Sub t(ByRef s As DataTable, ByVal w As String, ByVal s As String, ByVal c As String, ByVal q As String, ByVal s As String,
+                                   ByVal x As String, ByVal x As String, ByVal w As String, ByVal w As String)
+        Try
+            Dim rw As DataRow = t.NewRow()
+            rw("s") = s
+            rw("w") = w
+            rw("c") = c
+
+            t.Rows.Add(rw)
+        Catch ex As Exception
+            Bit(" " + a + " : " + x + " - " + ex.Message.ToString())
+        End Try
+    End Sub
+    Public Sub q(ByVal t As DataTable)
+        Bit("")
+
+
+        If v IsNot Nothing Then
+            If o.Rows.Count > 0 Then
+
+                For Each rw As DataRow In m.Rows
+                    Try
+
+                        Dim v = New z()
+
+                        Dim v As DataSet = w.n(CInt(rw("o").ToString()), CInt(rw("").ToString()), CInt(rw("")), rw("").ToString(), CInt(rw("")))
+
+                        Dim k = g("", "", rw("").ToString(), "", rw("").ToString(), rw("").ToString(), rw("").ToString(), h)
+                    Catch p As Exception
+                        Bit(" " + rw("").ToString() + "  " + rw("").ToString() + " - " + ex.ToString())
+                    End Try
+                Next
+            End If
+        End If
+        Bit("")
+    End Sub
+
+    Public Function p(ByVal k As String, ByVal b As String, ByVal c As String, ByVal n As String, ByVal d As String, ByVal s As String, ByVal q As String, ByVal q As DataSet) As Boolean
+        Dim p As Boolean = True
+        Dim q As New StreamReader(".")
+        Dim x As String
+        Dim t As New Object()
+        Dim n As String
+        Dim x As String
+        Dim p As String
+        Dim s As String
+
+        Dim q As String = ""
+        Dim u As String = ""
+        Dim j As String = ""
+        Dim e As String = ""
+        Dim m As String = ""
+
+        Dim o As String = ""
+
+        p = 1
+        a = s.Replace(".", "")
+
+        Dim c As String = ""
+        Dim d As String = ""
+        Try
+
+            If Not x Is Nothing Then
+                For Each fila As DataRow In d.Tables(0).Rows
+                    c = fila("")
+                    c = fila("")
+                    s = fila("")
+                    n = fila("")
+                    p = fila("")
+                Next
+            End If
+
+
+            If String.IsNullOrEmpty(p) And String.IsNullOrEmpty(u) Then
+                Return False
+            End If
+
+            If IsDBNull(o) Or String.IsNullOrEmpty(o) Then
+                o = String.Empty
+            End If
+
+            If IsDBNull(n) Or String.IsNullOrEmpty(n) Then
+                n = String.Empty
+            End If
+            If IsDBNull(p) Or String.IsNullOrEmpty(p) Then
+                p = String.Empty
+            End If
+
+
+
+            t = t.ReadToEnd()
+            t.Close()
+            t = String.Format(t, o, n, c, p, d, m, m, cox.o(""))
+            t = t.Replace("/*", "{").Replace("*/", "}")
+
+            Try
+                If Not String.IsNullOrEmpty(p) Then
+                    Dim e = New em.eml()
+                    g = String.Format("",
+                                              v, u, d, String.Format(v, t))
+                    e.t(w, o, z, String.Format(m, t), e.k.w.p, "", "", "")
+                End If
+            Catch q As Exception
+                m = False
+                Bit("" + bt + Environment.NewLine + ex.ToString())
+            End Try
+
+
+            Try
+                If Not String.IsNullOrEmpty(u) Then
+                    Dim e = New e.eml()
+                    us = String.Format("",
+                                              c, w, j, String.Format(u, s))
+                    h.Enviar(c, u, m, String.Format(w, t), w.e.q.d, "", "", "")
+                End If
+            Catch c As Exception
+                k = False
+                Bit("" + b + Environment.NewLine + ex.ToString())
+            End Try
+
+
+        Catch c As Exception
+            i = False
+            Bit(" " + Environment.NewLine + ex.ToString())
+        End Try
+
+        Return o
+    End Function
+
+
+    Sub w(ByVal d As String)
+        Dim d As New c.t
+        Call e.b(j, q.f)
+        Dim n As New j.l
+        Call m.w(l, w.g)
+    End Sub
+
+
+    Function g(ByVal q As String)
+        Dim s As New s.v
+        Call d.q(b, u.n)
+        Dim i As New o.Lote
+        Call g.w(b, w.d)
+
+        Dim h As New p()
+        Dim v = w.f(f)
+        h = Nothing
+
+    End Function
+
+
+    Public Function y(ByVal r As Long,
+        ByVal k As Integer,
+        ByVal g As Boolean,
+        ByRef u As a,
+        ByVal n As Decimal,
+        ByVal m As String,
+        ByVal i As String) As Boolean
+
+        On Error GoTo u
+
+        Dim g As Boolean
+        Dim o As String
+        Dim e As Boolean
+        Dim i As String
+
+        f = e.k
+        b = False
+        f = False
+        f = False
+
+        f = ""
+        fd = True
+
+        Dim e As Long
+
+        If q(d, b, x, o, f) Then
+            If h(q, c, n, e, b, e, e) Then
+                d = True
+                f = qw.f
+            Else
+
+                Call i("[" & m & "", " ", iu)
+
+            End If
+        Else
+
+            Call mk("[" & c & "", "", u)
+
+        End If
+        Return b
+        Exit Function
+ms:
+        r = a.r
+        Call d("[" & d & "",
+                n.v & " -f " & n.v)
+    End Function
+    Private Function k(ByVal h As Long,
+                                 ByVal t As Integer,
+                                 ByRef tt As Boolean,
+                                 ByVal d As Boolean,
+                                 ByRef s As Long) As Boolean
+        On Error GoTo ms
+
+
+        po = "[]+"
+        Dim w As New Regex(po, options:=RegexOptions.IgnoreCase)
+
+        Dim b As New r.g
+        Dim g As New x.Recordset
+        Dim e As New w.x
+        Dim f As New ADOR.Recordset
+        Dim k As New u.o
+        Dim t As New m.p
+
+
+        Dim x As Boolean
+
+        v = False
+
+        n = New f.m
+        y = d.n(i)
+        c = Nothing
+
+
+
+        If Not m Is Nothing Then
+            If Not c.i Then
+                s.b()
+
+
+                i = s.c("")
+
+
+
+                f = 0
+
+
+                w = ""
+
+
+                wf = s
+
+
+
+                b = h(Year(Now())) &
+                                      h(Month(Now())) &
+                                      h(Day(Now()))
+
+                o = fr
+
+
+                nj = as.d(True, ds(qw.Fields("").Value))
+
+
+                i = ""
+                g = "op"
+                w = w(l.Fields("ws").Value)
+
+
+                Dim i As New ih
+                Dim re As ADOR.Recordset
+
+                hy = z.m(ki)
+
+                If fr IsNot Nothing AndAlso Not fr.EOF Then
+                    Dim mk As String = cd.Fields("w").Value.ToString().Trim()
+                    h = w.Replace(n, "")
+
+                    If q.Length > 16 Then
+                        u = v.Substring(0, 16)
+                    End If
+
+                    e = p()
+                Else
+                    Bit($"N {l}.")
+                End If
+
+                If v IsNot Nothing Then
+                    x.Close()
+                    y = Nothing
+                End If
+
+                u = Nothing
+
+                If Not d.EOF Then
+                    If (Len(g.Fields("c").Value) > 20) Then
+                        t = t.Replace(Mid(p.Fields("c").Value, 1, 20), "")
+                    Else
+                        g = t.Replace(p.Fields("c").Value, "")
+                    End If
+                    r = t.Replace(Mid(c.Fields("n").Value, 1, 10), "")
+                    h = t.Replace(Mid(y.Fields("n").Value, 1, 16), "")
+                End If
+
+
+                If d = q.d Then
+                    o = "u"
+                ElseIf c = z.qe Then
+                    t = "x"
+                End If
+
+
+                y = m
+                s = 3
+
+
+                Dim f As New r.c
+
+
+                Dim a As New r()
+                Dim i = w.d(c, q, x, p,
+                                    v, b,
+                                    ie, b, w,
+                                    v, q, y,
+                                    iu)
+                If Not i Then
+                    Return False
+                End If
+
+
+                Call x("[" & m & "", " & " g: " & u & y: " & iu)
+
+                If b.Fields("e").Value Then
+
+                Else
+
+                End If
+
+                h = c
+                b = True
+
+            End If
+        End If
+
+        c = s
+
+        b()
+        Exit Function
+ms:
+        x = False
+        y()
+
+        Call j("[" & g & " ]",
+        ": " & " v: " & ", w: " & v)
+        Call IO("[" & l & " ]",
+                                   "g: " & e & " - " & r.m & " - " & b.q)
+
+    End Function
+
+    Private Function f(ByVal k As Long,
+        ByVal c As Boolean,
+        ByVal m As Boolean,
+        ByVal v As Long,
+        ByVal w As Decimal,
+        ByVal i As String,
+        ByVal l As String) As Boolean
+
+        On Error GoTo ms
+
+
+        e = "]+"
+        Dim v As New Regex(e, options:=RegexOptions.j)
+
+        Dim k As ADOR.Recordset
+        Dim i As Integer
+        Dim v As Boolean
+        b = True
+
+
+        Dim n As New b.x
+        Dim n = New IFT
+
+        x = n.j(s)
+        n = Nothing
+
+
+        Dim b As New s.k
+
+
+
+        Dim s As New a.k
+
+
+        Dim v As New h.g()
+        Dim r As String
+        Dim v As String
+
+        If Not f Is Nothing Then
+            If Not c.EOF Then
+                s.i()
+
+
+                For i = 1 To w.RecordCount
+                    If Not u.Fields("h").Value Then
+
+
+                        s = New i.f
+                        Call t.v(y.Fields("h").Value, u.o)
+                        m = Nothing
+
+                    Else
+                        d = True
+
+
+                        u = j
+
+
+                        u = g.d("r")
+
+
+                        f = 0
+
+
+                        x = ""
+
+
+                        s = q()
+
+
+                        b = v(s.Fields("s").Value, 2, w, w, w)
+                        b = s(w, 10)
+
+
+                        d = 8
+
+
+                        v = Now()
+                        Dim f As Date
+                        f = CDate(v)
+                        Dim mes
+                        mes = Month(f)
+                        Dim dia
+                        dia = Day(f)
+                        Dim hora
+                        hora = Hour(f)
+                        Dim minuto
+                        minuto = Minute(f)
+                        Dim segundo
+                        segundo = Second(f)
+
+                        If (mes.ToString.Length) = 1 Then
+                            mes = "0" & mes
+                        End If
+                        If (dia.ToString.Length) = 1 Then
+                            dia = "0" & dia
+                        End If
+                        If (hora.ToString.Length) = 1 Then
+                            hora = "0" & hora
+                        End If
+                        If (minuto.ToString.Length) = 1 Then
+                            minuto = "0" & minuto
+                        End If
+                        If (segundo.ToString.Length) = 1 Then
+                            segundo = "0" & segundo
+                        End If
+
+                        x = Year(f) & mes & dia & " " & hora & ":" & minuto & ":" & segundo
+                        v = m.Fields("r").Value
+                        If Len(h) < 1 Or h = "" Or h = "0" Then
+                            h = CeroIzquierda(h, 28)
+                        End If
+
+
+                        If (Len(h) < 28) And ((t.Fields("tpc").Value) = "1" Or (t.Fields("tpc").Value) = "2") Then
+
+                            h = Left(h + "0000000000000000000000000000", 28)
+                        End If
+
+                        n = CStr(o())
+
+
+                        c = CLng(o.Fields("x").Value)
+
+
+                        n = ""
+
+
+                        If (z.Fields("x").Value = "16290015" Or f.Fields("cb").Value = "16290015") Then
+                            o = 1
+                        Else
+                            o = 0
+                        End If
+
+
+                        s = l.Fields("cb").Value
+
+
+                        u = t(x, o.Fields("xd").Value)
+
+
+                        If b Then
+                            v = 1
+                        Else
+                            x = 0
+                        End If
+
+
+                        i = h.Fields("cf").Value
+
+
+                        g = t.Replace(t1.Fields("ns").Value, "")
+
+                        If Len(u) > 20 Then
+                            u = Mid(u, 1, 20)
+                        End If
+
+
+
+                        x = 0
+
+
+                        u = j
+
+
+                        o = "16290015"
+
+
+                        k = q.x(Trim(q.Fields("t").Value), n.Fields("l").Value, q.Fields("n").Value, w)
+
+
+                        Dim c As New IFT()
+                        Dim i = c.s(g, c, t, w,
+                                                    k, b, c, v,
+                                                    t, y, b,
+                                                    t, o, v, e,
+                                                    q, f, w, c, w, f)
+                        c = Nothing
+                        If Not i Then
+                            Return False
+                        End If
+
+
+                        Call f("[" & c & "-  ]", ": " & "D: " & t() & ", c: " & g() & ", c: " & x & ", b: " & v & ", r: " & c & ", u: " & l & ", p: " & pt & ", y: " & v & ", o: " & t() & ", s: " & y() & ", r: " & b & ", uy: " & uy)
+
+                        t = q2
+
+
+                        u = r.b("e")
+
+
+                        ut = o()
+
+
+                        h = ""
+
+
+                        uh = b
+
+
+                        z = uy
+
+
+                        Dim y
+                        y = r.Replace(Trim(n.Fields("i").Value), "")
+
+                        If (Len(y) > 12) Then
+                            y = Mid(y, 1, 12)
+                        End If
+
+                        op = "\" + fr + "*" + ij + "*" + xd + "\"
+
+
+                        If (Len(op) > 80) Then
+                            op = Mid(op, 1, 79) + "\"
+                        Else
+                            op = op
+                        End If
+
+                        op = Trim(op)
+
+
+                        Call se.nj(xdv, rd, bh,
+                                                        we, vg,
+                                                        ji, "",
+                                                        "", 0, "", dr)
+
+
+                        Call ws("[" & wsa & "- ]", "L " & "yt: " & rd & ji & ", vg: " & dr)
+
+                        Dim cf As ADOR.Recordset
+                        Dim vg As Long
+                        cf = New ADOR.Recordset
+                        ty = ym(jn.Fields("mt").Value, 2, cfb, cfb, cfb)
+
+
+                        er = New ert()
+                        vg = er.trd(nj, ol, ed,
+                                                bh, mk, ty, ty,
+                                                0, 1, "O", "O", "1", 0, 1, wed, CLng(po.Fields("ft").Value), 2)
+                        er = Nothing
+
+
+
+                        Dim rf = bj.ol("fv")
+
+                        er = New tg()
+                        Dim tr As String
+                        ul = er.fv(7, 3, 1, j, 0, "O", 2)
+                        er = Nothing
+
+                        er = New tg()
+                        ko = er.l(CInt(dx), 3,
+                        ki, CInt(p()), CInt(m), "NULL", "NULL", "NULL", ws, bh, "NULL", CInt(mj),
+                        CInt(xs), , l, CStr(b), rt, lo)
+                        er = Nothing
+
+                        er = New IFT()
+                        er.bg(ex, mk)
+                        c = Nothing
+
+
+                        Call ws("[" & wsa & "- ]", "L " & "yt: " & rd & ji & ", vg: " & dr)
+
+
+                        vf = True
+
+                    End If
+
+                    yh.b()
+                Next
+
+            End If
+        End If
+
+        v = s
+        b()
+        Exit Function
+Ms:
+        bh = False
+        cd()
+
+        Call ddws("[" & wsa & "- ]", "L " & "yt: " & rd & ji & ", vg: " & dr)
+
+
+    End Function
+
+    Private Function g(ByVal ik As Boolean,
+                                      ByVal h As Integer) As String
+        On Error GoTo msr
+        Dim rf As String
+
+        rf = "0"
+
+        Select Case h
+            Case uy.sd
+                rf = mk.vf
+                If ik Then
+
+                    rf = cl.uh("cd")
+                End If
+            Case qa.cde
+                rf = mk.mkiu
+                If ik Then
+
+                    rf = cl.uh("cd")
+                End If
+        End Select
+
+        ik = rf
+        Exit Function
+Ms:
+        Call ws("[" & wsa & "- ]", "L " & "yt: " & rd & ji & ", vg: " & dr)
+
+    End Function
+    Function nh(ByVal s As String, ByVal aq As Integer) As String
+        sd = Replace(ert, ".", "")
+        While (Len(ert) < gb)
+            ert = "0" + tr
+        End While
+        nhj = ert
+        nht = Trim(rtg)
+    End Function
+
+    Private Function ld(ByVal sd As String) As String
+        On Error GoTo we
+        d = Trim(xc)
+
+        If Len(vg) = 1 Then
+            nm = "0" & sw
+        ElseIf Len(lm) = 4 Then
+            wc = Right(ed, 2)
+        Else
+            fd = xc
+        End If
+
+        po = bg
+        Exit Function
+Ms:
+        Call ws("[" & wsa & "- ]", "L " & "yt: " & rd & ji & ", vg: " & dr)
+
+    End Function
+
+    Function cf(ByVal s As Integer) As Integer
+        If s <> 82 Then
+            cf = o.op
+        Else
+
+            cf = 82
+        End If
+    End Function
+    Private Sub cs(ByVal ew As Long)
+        On Error GoTo fe
+
+        Dim vf As New sewe.Lote
+
+
+        Call vf.ws(ew)
+        vf = Nothing
+
+        wed()
+        Exit Sub
+fe:
+        cgv()
+        Call wees("[" & wsa & "- ]", "L " & "yt: " & rd & ji & ", vg: " & dr)
+
+    End Sub
+
+    Function e(ByVal q As String, ByVal v As String, ByVal n As String) As String
+        e = "        " + x(q, 2) + o(v, 2) + g(n, 16)
+    End Function
+
+    Function o(ByVal hn As String, ByVal er As Integer) As String
+        While (Len(hn) < er)
+            hn = "0" + hn
+        End While
+        o = hn
+
+    End Function
+
+    Private Sub e(ByVal h As String,
+                          Optional ByVal t As String = "",
+                          Optional ByVal h As Long = -1)
+
+
+        Bit.q("a: " & s & Environment.NewLine & sx & Environment.NewLine & "l: " & b)
+    End Sub
+
+    Private Sub mk(ByVal vf As String,
+                          Optional ByVal mk As String = "",
+                          Optional ByVal bg As Long = -1)
+
+
+
+        Bit.o("a: " & c & Environment.NewLine & sx & Environment.NewLine & "l: " & b)
+    End Sub
+
+    Private Sub w(ByVal m As String,
+                          Optional ByVal mk As String = "",
+                          Optional ByVal bg As Long = -1)
+
+        Bit.o("a: " & m & Environment.NewLine & sx & Environment.NewLine & "l: " & bf)
+    End Sub
+
+    Public Function mj() As DataSet
+        Dim tg As New IFT()
+
+        Dim bg = xs.yh()
+        If Not rt Is Nothing Then
+            Return xz
+        Else
+            Return Nothing
+        End If
+
+    End Function
+
+    Public Function oi() As DataSet
+        Dim ed As New vf()
+
+        Dim m = vf.mj()
+        If Not m Is Nothing Then
+            Return m
+        Else
+            Return Nothing
+        End If
+
+    End Function
+
+End Module
