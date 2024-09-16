@@ -1,6 +1,19 @@
 
 
 Module Module1
+    'Variables para c
+    Dim s
+    Dim c
+    Dim a
+    Dim h
+
+    Dim i As String = ""
+    Dim y As String = ""
+    Dim dy As String = ""
+    Dim df As String = ""
+// tiene mas variables etc
+
+
 
 
     Sub Main()
